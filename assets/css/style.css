@@ -1,0 +1,356 @@
+/* Custom styles for Carbon Footprint Calculator */
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.card {
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    background-color: #e9ecef;
+    font-weight: bold;
+}
+
+.form-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.chart-container {
+    position: relative;
+    height: 300px;
+    margin-bottom: 30px;
+}
+
+.result-box {
+    text-align: center;
+    padding: 20px;
+    background-color: #e9f7ef;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.result-box h3 {
+    margin-bottom: 15px;
+    color: #27ae60;
+}
+
+.result-value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.result-unit {
+    font-size: 1rem;
+    color: #7f8c8d;
+}
+
+.eco-tip {
+    background-color: #eafaf1;
+    border-left: 4px solid #27ae60;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.eco-tip h4 {
+    color: #27ae60;
+    margin-bottom: 10px;
+}
+
+.dashboard-summary {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.summary-box {
+    background: #fff;
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.summary-box:hover {
+    transform: translateY(-5px);
+}
+
+.summary-box h3 {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.summary-box .value {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    background: linear-gradient(45deg, #2c3e50, #3498db);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.summary-box .unit {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.energy-box {
+    border-top: 5px solid #3498db;
+    background: linear-gradient(to bottom, rgba(52, 152, 219, 0.1), transparent);
+}
+
+.transportation-box {
+    border-top: 5px solid #e74c3c;
+    background: linear-gradient(to bottom, rgba(231, 76, 60, 0.1), transparent);
+}
+
+.waste-box {
+    border-top: 5px solid #f39c12;
+    background: linear-gradient(to bottom, rgba(243, 156, 18, 0.1), transparent);
+}
+
+.total-box {
+    border-top: 5px solid #27ae60;
+    background: linear-gradient(to bottom, rgba(39, 174, 96, 0.1), transparent);
+}
+
+.chart-container {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    margin-bottom: 30px;
+    height: 400px;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-header {
+    background: linear-gradient(45deg, #2c3e50, #3498db);
+    color: white;
+    padding: 15px 20px;
+    border-bottom: none;
+}
+
+.card-header h3 {
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .dashboard-summary {
+        grid-template-columns: 1fr;
+    }
+    
+    .summary-box .value {
+        font-size: 1.8rem;
+    }
+    
+    .chart-container {
+        height: 300px;
+    }
+}
+
+.gauge-container {
+    position: relative;
+    height: 200px;
+    margin: 20px auto;
+    max-width: 400px;
+}
+
+.impact-scale {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+.impact-scale span {
+    font-weight: 500;
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-size: 0.9rem;
+}
+
+.impact-scale .low {
+    background-color: rgba(75, 192, 192, 0.2);
+    color: rgb(75, 192, 192);
+}
+
+.impact-scale .medium {
+    background-color: rgba(255, 206, 86, 0.2);
+    color: rgb(255, 206, 86);
+}
+
+.impact-scale .high {
+    background-color: rgba(255, 99, 132, 0.2);
+    color: rgb(255, 99, 132);
+}
+
+.card-header h3 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.chart-container {
+    position: relative;
+    margin: auto;
+    height: 300px;
+    width: 100%;
+}
+
+/* Center pie chart styles */
+.chart-container-centered {
+    position: relative;
+    margin: auto;
+    height: 400px;
+    width: 70%;
+    max-width: 600px;
+}
+
+.total-emissions {
+    padding: 20px;
+    border-radius: 10px;
+    background: linear-gradient(to right, rgba(52, 152, 219, 0.1), rgba(41, 128, 185, 0.1));
+}
+
+.total-emissions h4 {
+    color: #2c3e50;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.result-value.large {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin: 15px 0;
+}
+
+.result-unit {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+}
+
+/* Enhance card styling */
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-header {
+    background: linear-gradient(45deg, #2c3e50, #3498db);
+    color: white;
+    border-radius: 15px 15px 0 0 !important;
+    padding: 15px 20px;
+}
+
+.card-header h3 {
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.card-body {
+    padding: 25px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .chart-container-centered {
+        width: 100%;
+        height: 300px;
+    }
+    
+    .result-value.large {
+        font-size: 2rem;
+    }
+}
+
+.result-category {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.result-category:hover {
+    transform: translateY(-5px);
+}
+
+.result-category h4 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.result-value {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.result-unit {
+    font-size: 1rem;
+    color: #666;
+}
+
+.result-percent {
+    font-size: 1rem;
+    color: #666;
+}
+
+.energy-category {
+    background: linear-gradient(to bottom, rgba(54, 162, 235, 0.1), transparent);
+    border: 1px solid rgba(54, 162, 235, 0.2);
+}
+
+.transportation-category {
+    background: linear-gradient(to bottom, rgba(255, 99, 132, 0.1), transparent);
+    border: 1px solid rgba(255, 99, 132, 0.2);
+}
+
+.waste-category {
+    background: linear-gradient(to bottom, rgba(255, 206, 86, 0.1), transparent);
+    border: 1px solid rgba(255, 206, 86, 0.2);
+}
+
+@media (max-width: 768px) {
+    .result-category {
+        margin-bottom: 20px;
+    }
+    
+    .result-value {
+        font-size: 1.5rem;
+    }
+} 
