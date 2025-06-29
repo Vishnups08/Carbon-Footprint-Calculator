@@ -181,35 +181,6 @@ APP_DEBUG=true
 - **UI Styling**: Modify CSS in `assets/css/`
 - **Charts**: Customize visualizations in `assets/js/charts.js`
 
-## Troubleshooting
-
-### Common Issues
-
-1. **API Connection Failed**:
-   - Check your IBM API key in `config/api_config.php`
-   - Verify API endpoints are correct
-   - Ensure cURL is enabled in PHP
-
-2. **Database Connection Error**:
-   - Verify MySQL is running
-   - Check database credentials in `config/db_config.php`
-   - Ensure database `carbon_calculator` exists
-
-3. **Permission Errors**:
-   - Set proper file permissions (755 for directories, 644 for files)
-   - Ensure web server can write to session directory
-
-### Debug Mode
-
-Enable debug mode by setting `APP_DEBUG=true` in your environment configuration.
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
 
 ## IBM Hackathon Context
 
@@ -236,27 +207,3 @@ This project was developed during the **IBM Hackathon** with the following objec
 ## License
 
 This project is licensed under the MIT License.
-
-## Support
-
-### IBM Hackathon Resources
-- **IBM Cloud Documentation**: https://cloud.ibm.com/docs
-- **IBM Environmental Intelligence Suite**: https://www.ibm.com/products/environmental-intelligence-suite
-- **IBM Developer Community**: https://developer.ibm.com/
-
-### API Integration Support
-- **IBM API Documentation**: https://cloud.ibm.com/docs/environmental-intelligence-suite
-- **Carbon Interface Docs**: https://docs.carboninterface.com/
-- **Climatiq Docs**: https://www.climatiq.io/docs
-
-### Application Support
-- **Troubleshooting Guide**: Check the troubleshooting section above
-- **Error Logs**: Review PHP error logs for debugging
-- **GitHub Issues**: Report bugs and feature requests
-- **Development Team**: Contact the hackathon team for support
-
-### Hackathon Team Contact
-For questions about this IBM Hackathon project:
-- **Project Repository**: This GitHub repository
-- **Documentation**: See `API_SETUP_GUIDE.md` for detailed setup instructions
-- **Demo**: Contact the development team for live demonstrations 
